@@ -3,7 +3,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const path =require('path');
-
+var port = process.env.PORT || 3000;
 var app = express();
 
 
@@ -90,6 +90,6 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server started...');
 })
