@@ -1,0 +1,24 @@
+/* -------- loader ---------- */
+body{
+	overflow-x:hidden;
+}
+.loader{ position: fixed; width:100%; height:100%; background:#fff;  z-index:1200; left:0; top:0; right:0; overflow:hidden;
+}
+.tt-loading{background-color:#fff;height:100%;width:100%;position:fixed;z-index:5000;margin-top:0px;top:0px;}
+.tt-loading-center{width:100%;height:100%;position:relative;}
+.tt-loading-center-absolute{position:absolute;left:50%;top:50%;height:200px;width:200px;margin-top:-100px;margin-left:-100px;-ms-transform:rotate(-135deg);-webkit-transform:rotate(-135deg);-moz-transform:rotate(-135deg);transform:rotate(-135deg);-ms-transform:rotate(-135deg);}
+.tt-object{-moz-border-radius:50% 50% 50% 50%;border-radius:50% 50% 50% 50%;position:absolute;border-top:5px solid #f6364d;border-bottom:5px solid transparent;border-left:5px solid #f6364d;border-right:5px solid transparent;-webkit-animation:animate 2s infinite;animation:animate 2s infinite;-moz-animation:animate 2s infinite;-ms-animation:animate 2s infinite;}
+.object_one{left:75px;top:75px;width:50px;height:50px;}
+.object_two{left:65px;top:65px;width:70px;height:70px;-webkit-animation-delay:0.2s;animation-delay:0.2s;-moz-animation-delay:0.2s;-ms-animation-delay:0.2s;}
+.object_three{left:55px;top:55px;width:90px;height:90px;-webkit-animation-delay:0.4s;animation-delay:0.4s;-moz-animation-delay:0.4s;-ms-animation-delay:0.4s;}
+.object_four{left:45px;top:45px;width:110px;height:110px;-webkit-animation-delay:0.6s;animation-delay:0.6s;-moz-animation-delay:0.6s;-ms-animation-delay:0.6s;}
+#loading-text{position:absolute;left:50%;top:50%;margin-top:70px;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);font-size:16px;line-height:22px;font-weight:700;color:#222;}
+@-webkit-keyframes animate{
+    50%{-ms-transform:rotate(360deg) scale(0.8);-webkit-transform:rotate(360deg) scale(0.8);transform:rotate(360deg) scale(0.8);}
+}
+@-moz-keyframes animate{
+    50%{-ms-transform:rotate(360deg) scale(0.8);-webkit-transform:rotate(360deg) scale(0.8);transform:rotate(360deg) scale(0.8);-moz-transform:rotate(360deg) scale(0.8);}
+}
+@keyframes animate{
+    50%{-ms-transform:rotate(360deg) scale(0.8);-webkit-transform:rotate(360deg) scale(0.8);-moz-transform:rotate(360deg) scale(0.8);transform:rotate(360deg) scale(0.8);}
+}
