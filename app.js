@@ -49,6 +49,7 @@ app.get('/service',(req,res) => {
 app.get('/404',(req,res) => {
   res.render('404.handlebars');
 });
+// app.get('')
 
 
 app.post('/send', (req,res)=>{
@@ -91,5 +92,5 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 
 app.listen(port,()=>{
-    console.log('server started...');
-})
+    console.log(`server started... ${port}`);
+});
