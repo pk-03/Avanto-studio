@@ -67,14 +67,14 @@ app.post('/send', (req,res)=>{
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'bhaipk100@gmail.com',
-    pass: 'Pranit@9250044080'
+    user: key.mail1,
+    pass: key.pass
   }
 });
 
 var mailOptions = {
-  from: 'bhaipk100@gmail.com',
-  to: 'pranitarora03@gmail.com',
+  from: 'key.mail1',
+  to: 'key.mail2',
   subject: 'Sending Email using Node.js',
   text: 'CHECK THE CONTACT OF USER....',
   html : output
